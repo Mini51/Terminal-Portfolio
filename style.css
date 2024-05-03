@@ -1,0 +1,118 @@
+/* Terminal Window */
+body { 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+#terminal {
+    width: 90vw;
+    height: 90vh;
+    background: #0f172a;
+    color: #fff;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Terminal Header */
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background: #ddd;
+    color: #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Terminal Title */
+#terminal-header-title {
+    margin: 0 auto;
+}
+
+/* Terminal Buttons */
+#terminal-header-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.close-button,
+.minimize-button,
+.maximize-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.close-button {
+    background: #ff5f57;
+}
+
+.minimize-button {
+    background: #ffbd2e;
+}
+
+.maximize-button {
+    background: #27c93f;
+}
+
+/* Terminal Body */
+#terminal-body {
+    flex-grow: 1;
+    padding: 10px;
+    overflow: auto;
+}
+
+/* Terminal Input */
+/* lower the terminal input and keep on the same line unless the terminal is full */ 
+.terminal-input {
+    display: flex;
+    gap: 5px;
+    max-width: 100%;
+    margin-top: 1ch;
+}
+
+.terminal-input input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1em;
+    padding: 0;
+    width: 100%;
+
+}
+
+.terminal-input input:focus {
+    outline: none;
+}
+
+.terminal-output {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-top:    1ch;
+}
+
+.commandText {
+    color: #27c93f;
+}
+a {
+    color: #99f6e4;
+    text-decoration: none;
+}

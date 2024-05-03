@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <title>Ryan Goetz</title>
+</head>
+
+<body>
+    <!-- Terminal website -->
+    <div id="terminal">
+        <div id="terminal-header" class="terminal-header">
+            <div id="terminal-header-buttons">
+                <div id="terminal-header-button-close" class="close-button"></div>
+                <div id="terminal-header-button-minimize" class="minimize-button"></div>
+                <div id="terminal-header-button-maximize" class="maximize-button"></div>
+            </div>
+            <div id="terminal-header-title">Ryan Goetz</div>
+        </div>
+        <div id="terminal-body">
+
+            <!-- Message Displayed on load -->
+            <div class="connect-message">
+                <pre>
+                 _____                     
+                |  __ \                    
+                | |__) |   _  __ _ _ __   
+                |  _  / | | |/ _` | '_ \ 
+                | | \ \ |_| | (_| | | | | 
+                |_|  \_\__, |\__,_|_| |_| 
+                        __/ |                                        
+                       |___/                                         
+                </pre>
+                <p>Welcome to my personal portfolio, to get started type 'help' to see a list of commands.</p>
+                <p>For more information about me, type 'cat about.txt'.</p>
+            </div>
+
+            <div id="terminal-output" class="terminal-output">
+                <!-- This is where the output of commands will go -->
+            </div>  
+
+            <div class="terminal-input"> 
+                <span class="terminal-prompt">user@terminal:~$</span>
+                <input type="text" id="terminal-input" class="terminal-input-text" autofocus>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
