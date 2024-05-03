@@ -76,7 +76,6 @@ body {
 }
 
 /* Terminal Input */
-/* lower the terminal input and keep on the same line unless the terminal is full */ 
 .terminal-input {
     display: flex;
     gap: 5px;
